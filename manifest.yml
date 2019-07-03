@@ -1,0 +1,10 @@
+---
+applications:
+  - name: rabbit-test
+    memory: 1G
+    path: ./build/libs/gs-messaging-rabbitmq-0.1.0.jar
+    instances: 1
+    buildpacks:
+      - java_buildpack_offline
+    services:
+      - rabbit
