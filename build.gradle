@@ -29,7 +29,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-amqp")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
-    compile("org.springframework.boot:spring-boot-starter-cloud-connectors")
+    compile 'io.pivotal.cfenv:java-cfenv-boot:1.1.0.RELEASE'
     compile("org.projectlombok:lombok:1.18.8")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
