@@ -9,6 +9,14 @@ and printed out in the logs.
 There is no UI or anything for this sample, it's solely meant to be a way to generate a recurring message to RabbitMQ 
 will is also consumed.  The logs will tell you if this mechanism is working properly.
 
+# Environment Parsing
+
+The `master` branch of this repo uses `spring-boot-starter-cloud-connectors` to parse the environment variables and 
+configure the RabbitMQ service details for you when running on Cloud Foundry.  The `spring-boot-starter-cloud-connectors` 
+has been moved to maintenance release only at this point. The `java-cfenv` branch uses the newer `java-cfenv-boot` 
+component to parse the environment variables and configure the RabbitMQ service details for you.  Both branches should 
+work identically.
+    
 # Usage
 
 ## Build the Source and Run Locally
@@ -66,3 +74,4 @@ $ cf push
 ```bash
 $ cf logs -f rabbit-test
 ```
+

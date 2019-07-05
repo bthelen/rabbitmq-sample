@@ -8,6 +8,3 @@ applications:
       - java_buildpack_offline
     services:
       - rabbit
-    env:
-      SPRING_PROFILES_ACTIVE: cloud
-      JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
